@@ -13,7 +13,6 @@
         .slide.active { display: flex; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .glow-blue { box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.3); }
         .glow-purple { box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.3); }
         .text-gradient { background: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
@@ -28,10 +27,10 @@
 
     <!-- ВЕРХНИЙ ИНДИКАТОР ПРОГРЕССА -->
     <div class="fixed top-0 left-0 right-0 z-50 h-1 bg-white/10">
-        <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300" style="width: 10%;"></div>
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300" style="width: 14%;"></div>
     </div>
 
-    <!-- СЛАЙД 1: TITULAR -->
+    <!-- СЛАЙД 1: ТИТУЛЬНЫЙ -->
     <section class="slide active flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -40,8 +39,8 @@
                 </div>
                 <span class="font-bold tracking-wider text-sm text-gray-400">PITCH DECK 2026</span>
             </div>
-            <span class="text-xs font-mono px-3 py-1.5 rounded-full glass border border-emerald-500/30 text-emerald-400 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Live Validation Stage
+            <span class="text-xs font-mono px-3 py-1.5 rounded-full glass border border-purple-500/30 text-purple-400 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-purple-400 animate-ping"></span> AI Business All-in-One
             </span>
         </div>
 
@@ -55,18 +54,18 @@
             <p class="text-2xl text-gradient font-medium max-w-2xl mx-auto">
                 «Ты говоришь — AI делает.»
             </p>
-            <p class="text-gray-400 text-lg max-w-xl mx-auto leading-relaxed">
-                Персональный AI-сотрудник, который полностью управляет цифровой инфраструктурой и продажами бизнеса.
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                Персональный AI-сотрудник, который под ключ управляет сайтом, продажами, финансовым учетом, аналитикой и логистикой бизнеса.
             </p>
         </div>
 
         <div class="flex justify-between items-end text-xs text-gray-500 font-mono">
-            <div>FOUNDER: Geraldapple.pl Ecosystem</div>
+            <div>FOUNDER: Telegram <span class="text-blue-400">@BigGuitarBoy</span></div>
             <div>[ НАЖМИТЕ → ДЛЯ ПРОДОЛЖЕНИЯ ]</div>
         </div>
     </section>
 
-    <!-- СЛАЙД 2: PROBLEM -->
+    <!-- СЛАЙД 2: ПРОБЛЕМА -->
     <section class="slide flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
             <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">01 / Проблема</span>
@@ -74,25 +73,25 @@
         </div>
 
         <div class="max-w-5xl mx-auto w-full space-y-8">
-            <h2 class="text-4xl font-bold tracking-tight">Малый бизнес тонет в технической рутине</h2>
+            <h2 class="text-4xl font-bold tracking-tight">Малый бизнес тонет в технической и операционной рутине</h2>
             
             <div class="grid grid-cols-3 gap-6">
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-red-500/20">
                     <div class="p-3 bg-red-500/10 w-fit rounded-xl text-red-400"><i data-lucide="dollar-sign"></i></div>
-                    <h3 class="font-bold text-lg text-white">Дорого и сложно</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Свой штат из разработчика, SEO-шника и дизайнера стоит от $3,000/мес. Агентства работают медленно.</p>
+                    <h3 class="font-bold text-lg text-white">Штат специалистов — дорого</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Разработчик, бухгалтер, SEO-шник и аналитик обходятся в тысячи долларов ежемесячно.</p>
                 </div>
 
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-amber-500/20">
                     <div class="p-3 bg-amber-500/10 w-fit rounded-xl text-amber-400"><i data-lucide="layers"></i></div>
-                    <h3 class="font-bold text-lg text-white">Тупик No-Code</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Shopify и Tilda создают сайт, но не управляют им. Предпринимателю все равно нужно самому сидеть в CMS.</p>
+                    <h3 class="font-bold text-lg text-white">Разрозненные сервисы</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Сайт отдельно, учет отдельно, аналитика отдельно. Предприниматель тратит время на связывание систем.</p>
                 </div>
 
                 <div class="glass-card p-6 rounded-2xl space-y-3 border-purple-500/20">
                     <div class="p-3 bg-purple-500/10 w-fit rounded-xl text-purple-400"><i data-lucide="clock"></i></div>
-                    <h3 class="font-bold text-lg text-white">Расфокус фаундера</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Вместо закупки товаров и продаж, предприниматель тратит до 20 часов в неделю на технические настройки.</p>
+                    <h3 class="font-bold text-lg text-white">Потеря контроля</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Без мгновенных данных о бухгалтерии и продажах сложно оперативно принимать решения по бизнесу.</p>
                 </div>
             </div>
         </div>
@@ -100,53 +99,42 @@
         <div class="text-xs text-gray-500 font-mono">02 / 07</div>
     </section>
 
-    <!-- СЛАЙД 3: SOLUTION -->
+    <!-- СЛАЙД 3: В ЧЕМ НАШЕ ОТЛИЧИЕ (Replit/Lovable vs AI Operator) -->
     <section class="slide flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
-            <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">02 / Решение</span>
+            <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">02 / Конкурентное преимущество</span>
             <span class="text-xs text-gray-500">AI Business Operator</span>
         </div>
 
         <div class="max-w-5xl mx-auto w-full space-y-8">
             <div class="space-y-2">
-                <h2 class="text-4xl font-bold tracking-tight">Единый AI-оператор вместо 5 специалистов</h2>
-                <p class="text-gray-400">Управление сайтом и продажами происходит прямо в чате на естественном языке.</p>
+                <h2 class="text-4xl font-bold tracking-tight">Мы не инструмент сборки. Мы — Операционная Система</h2>
+                <p class="text-gray-400">Почему Lovable, Replit, Framer и Bolt — это другое направление.</p>
             </div>
 
-            <div class="grid grid-cols-2 gap-8 items-center">
-                <div class="space-y-4">
-                    <div class="glass p-4 rounded-xl flex items-center gap-4">
-                        <div class="p-2 bg-blue-500/20 text-blue-400 rounded-lg"><i data-lucide="message-square"></i></div>
-                        <div>
-                            <div class="font-semibold text-sm">Разговорный UI</div>
-                            <div class="text-xs text-gray-400">Команды голосом или текстом в Telegram / Web</div>
-                        </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="glass p-6 rounded-2xl space-y-4 border-red-500/20">
+                    <div class="font-bold text-xl text-red-400 flex items-center gap-2">
+                        <i data-lucide="x-circle"></i> Lovable / Replit / Bolt
                     </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-4">
-                        <div class="p-2 bg-purple-500/20 text-purple-400 rounded-lg"><i data-lucide="cpu"></i></div>
-                        <div>
-                            <div class="font-semibold text-sm">Автономный код и деплой</div>
-                            <div class="text-xs text-gray-400">AI сам генерирует UI, правит базу и выкатывает релиз</div>
-                        </div>
-                    </div>
-                    <div class="glass p-4 rounded-xl flex items-center gap-4">
-                        <div class="p-2 bg-emerald-500/20 text-emerald-400 rounded-lg"><i data-lucide="shield-check"></i></div>
-                        <div>
-                            <div class="font-semibold text-sm">Visual Self-Healing</div>
-                            <div class="text-xs text-gray-400">Авто-тестирование верстки скриншотами перед публикацией</div>
-                        </div>
-                    </div>
+                    <ul class="text-sm text-gray-400 space-y-3 leading-relaxed">
+                        <li>• **Создают только код** для программистов или технарей.</li>
+                        <li>• Нет встроенной бухгалтерии и учета финансов.</li>
+                        <li>• Не умеют автономно вести склад, заказы и продажи.</li>
+                        <li>• После создания сайта бизнес остаётся один на один с рутиной.</li>
+                    </ul>
                 </div>
 
-                <div class="glass-card p-6 rounded-2xl border-blue-500/30 space-y-4 font-mono text-xs">
-                    <div class="text-gray-500">// Пример диалога с оператором:</div>
-                    <div class="p-3 bg-blue-950/50 rounded-lg border border-blue-800/40 text-blue-200">
-                        «Добавь новый iPhone 16 Pro za 5299 PLN, сделай банер с бесплатной доставкой и включи рассрочку»
+                <div class="glass-card p-6 rounded-2xl space-y-4 border-emerald-500/30 glow-purple">
+                    <div class="font-bold text-xl text-emerald-400 flex items-center gap-2">
+                        <i data-lucide="check-circle-2"></i> AI Business Operator
                     </div>
-                    <div class="p-3 bg-emerald-950/50 rounded-lg border border-emerald-800/40 text-emerald-200 flex items-center gap-2">
-                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-                        <span>Принято! Обновил DB, пересобрал UI, проверил Playwright и опубликовал.</span>
-                    </div>
+                    <ul class="text-sm text-gray-200 space-y-3 leading-relaxed">
+                        <li>✓ **Автономный AI-девелопер сайта** + мгновенные изменения через разговор.</li>
+                        <li>✓ **Полный финансовый учет и бухгалтерия** внутри одной системы.</li>
+                        <li>✓ **Сквозная статистика и аналитика** (почему упали продажи, что в топе).</li>
+                        <li>✓ **Авто-управление складом, заказами и платежами.**</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -154,130 +142,146 @@
         <div class="text-xs text-gray-500 font-mono">03 / 07</div>
     </section>
 
-    <!-- СЛАЙД 4: ARCHITECTURE -->
+    <!-- СЛАЙД 4: РЕШЕНИЕ И ИНТЕРФЕЙС -->
     <section class="slide flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
-            <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">03 / Архитектура</span>
+            <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">03 / Решение</span>
             <span class="text-xs text-gray-500">AI Business Operator</span>
         </div>
 
-        <div class="max-w-5xl mx-auto w-full space-y-6">
-            <h2 class="text-4xl font-bold tracking-tight">Детерминированный AI Engine</h2>
-
-            <div class="grid grid-cols-4 gap-4 text-center">
-                <div class="glass-card p-5 rounded-xl space-y-2 border-blue-500/20">
-                    <div class="text-blue-400 mx-auto w-fit"><i data-lucide="message-circle"></i></div>
-                    <div class="font-bold text-sm">1. User Input</div>
-                    <div class="text-xs text-gray-400">Голос/Текст через Telegram / Web</div>
-                </div>
-                <div class="glass-card p-5 rounded-xl space-y-2 border-purple-500/20">
-                    <div class="text-purple-400 mx-auto w-fit"><i data-lucide="workflow"></i></div>
-                    <div class="font-bold text-sm">2. LLM Router</div>
-                    <div class="text-xs text-gray-400">Claude 3.5 Function Calling</div>
-                </div>
-                <div class="glass-card p-5 rounded-xl space-y-2 border-emerald-500/20">
-                    <div class="text-emerald-400 mx-auto w-fit"><i data-lucide="database"></i></div>
-                    <div class="font-bold text-sm">3. Sandbox & DB</div>
-                    <div class="text-xs text-gray-400">Supabase + Dynamic Next.js Engine</div>
-                </div>
-                <div class="glass-card p-5 rounded-xl space-y-2 border-amber-500/20">
-                    <div class="text-amber-400 mx-auto w-fit"><i data-lucide="rocket"></i></div>
-                    <div class="font-bold text-sm">4. Auto-Deploy</div>
-                    <div class="text-xs text-gray-400">Vercel Edge API Release</div>
-                </div>
+        <div class="max-w-5xl mx-auto w-full space-y-8">
+            <div class="space-y-2">
+                <h2 class="text-4xl font-bold tracking-tight">Всё управление — через обычный разговор</h2>
+                <p class="text-gray-400">Предприниматель занимается бизнесом, AI берет на себя всю техническую и учетную часть.</p>
             </div>
 
-            <div class="glass p-6 rounded-2xl text-center border-white/10">
-                <span class="text-gradient font-bold text-lg">Ключевой прорыв:</span>
-                <span class="text-gray-300 text-sm ml-2">AI управляет не статичным кодом, а структурированным JSON-состоянием сайта в реальном времени.</span>
+            <div class="grid grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="glass p-4 rounded-xl flex items-center gap-4">
+                        <div class="p-2 bg-blue-500/20 text-blue-400 rounded-lg"><i data-lucide="code"></i></div>
+                        <div>
+                            <div class="font-semibold text-sm">AI Разработчик Сайта</div>
+                            <div class="text-xs text-gray-400">Меняет дизайн, создает страницы, тестирует верстку</div>
+                        </div>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center gap-4">
+                        <div class="p-2 bg-emerald-500/20 text-emerald-400 rounded-lg"><i data-lucide="calculator"></i></div>
+                        <div>
+                            <div class="font-semibold text-sm">Бухгалтерия и Учет</div>
+                            <div class="text-xs text-gray-400">Считает маржу, расходы, остатки на складе и налоги</div>
+                        </div>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center gap-4">
+                        <div class="p-2 bg-purple-500/20 text-purple-400 rounded-lg"><i data-lucide="bar-chart-3"></i></div>
+                        <div>
+                            <div class="font-semibold text-sm">Сквозная Аналитика</div>
+                            <div class="text-xs text-gray-400">Отвечает на вопрос: «Почему упали продажи и как исправить?»</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border-blue-500/30 space-y-4 font-mono text-xs">
+                    <div class="text-gray-500">// Запросы предпринимателя:</div>
+                    <div class="p-2.5 bg-blue-950/50 rounded-lg border border-blue-800/40 text-blue-200">
+                        «Добавь новый товар, сделай баннер и покажи маржу за неделю»
+                    </div>
+                    <div class="p-2.5 bg-emerald-950/50 rounded-lg border border-emerald-800/40 text-emerald-200">
+                        «Посчитай чистую прибыль за месяц с учетом закупки»
+                    </div>
+                    <div class="p-2.5 bg-purple-950/50 rounded-lg border border-purple-800/40 text-purple-200">
+                        «Сделай мобильную версию удобнее и оптимизируй под SEO»
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="text-xs text-gray-500 font-mono">04 / 07</div>
     </section>
 
-    <!-- СЛАЙД 5: TRACTION / VALIDATION -->
+    <!-- СЛАЙД 5: ТАРИФ И МОНЕТИЗАЦИЯ -->
     <section class="slide flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
-            <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">04 / Валидация</span>
+            <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest">04 / Монетизация</span>
             <span class="text-xs text-gray-500">AI Business Operator</span>
         </div>
 
-        <div class="max-w-5xl mx-auto w-full space-y-6">
+        <div class="max-w-4xl mx-auto w-full space-y-8 text-center">
             <div class="space-y-2">
-                <div class="text-xs text-emerald-400 font-mono font-bold uppercase tracking-wider">Proof of Concept</div>
-                <h2 class="text-4xl font-bold tracking-tight">Подтверждено на кейсе Geraldapple.pl</h2>
+                <h2 class="text-4xl font-bold tracking-tight">Единая понятная подписка</h2>
+                <p class="text-gray-400">Без скрытых платежей, ограничений и сложных тарифных сеток.</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-6">
-                <div class="glass p-5 rounded-xl space-y-2">
-                    <div class="text-2xl">🇵🇱 🇺🇦 🇷🇺</div>
-                    <div class="font-bold text-sm">Мультиязычность</div>
-                    <div class="text-xs text-gray-400">Автоматический локализованный каталог для Польши.</div>
+            <div class="glass-card p-10 rounded-3xl border-purple-500/40 glow-purple max-w-xl mx-auto space-y-6">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-300 font-mono text-xs uppercase tracking-widest border border-purple-500/30">
+                    All-In-One Pass
                 </div>
-                <div class="glass p-5 rounded-xl space-y-2">
-                    <div class="text-2xl">💳 ⚡</div>
-                    <div class="font-bold text-sm">Платежи & Raty 0%</div>
-                    <div class="text-xs text-gray-400">Интеграция BLIK, PayU, Stripe и рассрочки без программистов.</div>
+                
+                <div class="text-6xl font-extrabold text-white">
+                    $149 <span class="text-xl text-gray-400 font-normal">/ месяц</span>
                 </div>
-                <div class="glass p-5 rounded-xl space-y-2">
-                    <div class="text-2xl">🏷️ ♻️</div>
-                    <div class="font-bold text-sm">Trade-in & Promo</div>
-                    <div class="text-xs text-gray-400">Авто-расчет б/у техники и система промокодов (GERALD).</div>
-                </div>
-            </div>
 
-            <div class="glass-card p-6 rounded-2xl border-emerald-500/30 flex justify-between items-center">
-                <div>
-                    <div class="font-bold text-base text-white">Результат работы AI Operator:</div>
-                    <div class="text-xs text-gray-400">Сайт развернут, наполнен товарами, оснащен каруселью и эквайрингом за 5 минут диалога.</div>
+                <div class="grid grid-cols-2 gap-4 text-left text-sm text-gray-200 pt-4 border-t border-white/10">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="text-emerald-400 w-4 h-4"></i>
+                        <span>AI-разработчик сайта 24/7</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="text-emerald-400 w-4 h-4"></i>
+                        <span>Полная бухгалтерия и учет</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="text-emerald-400 w-4 h-4"></i>
+                        <span>Склады, каталоги, заказы</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="text-emerald-400 w-4 h-4"></i>
+                        <span>Глубокая бизнес-аналитика</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="text-emerald-400 w-4 h-4"></i>
+                        <span>Авто-SEO & Маркетинг</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check" class="text-emerald-400 w-4 h-4"></i>
+                        <span>Безлимитные правки сайта</span>
+                    </div>
                 </div>
-                <span class="px-4 py-2 bg-emerald-500/20 text-emerald-300 font-mono text-xs rounded-lg border border-emerald-500/40">100% Autonomous</span>
             </div>
         </div>
 
         <div class="text-xs text-gray-500 font-mono">05 / 07</div>
     </section>
 
-    <!-- СЛАЙД 6: BUSINESS MODEL -->
+    <!-- СЛАЙД 6: ВАЛИДАЦИЯ КОНЦЕПЦИИ -->
     <section class="slide flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
-            <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">05 / Монетизация</span>
+            <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">05 / Статус</span>
             <span class="text-xs text-gray-500">AI Business Operator</span>
         </div>
 
         <div class="max-w-5xl mx-auto w-full space-y-8">
-            <h2 class="text-4xl font-bold tracking-tight">SaaS Подписка + % с оборота</h2>
+            <div class="space-y-2">
+                <h2 class="text-4xl font-bold tracking-tight">Подтвержденный прототип и архитектура</h2>
+                <p class="text-gray-400">Механика работы оператора оттестирована и доказала свою жизнеспособность.</p>
+            </div>
 
             <div class="grid grid-cols-3 gap-6">
-                <div class="glass p-6 rounded-2xl space-y-4 border-white/10">
-                    <div class="font-bold text-lg">Starter</div>
-                    <div class="text-3xl font-extrabold text-white">$49 <span class="text-xs text-gray-400 font-normal">/ мес</span></div>
-                    <ul class="text-xs text-gray-400 space-y-2">
-                        <li>✓ 1 Сайт + AI Operator</li>
-                        <li>✓ До 50 правок в месяц</li>
-                        <li>✓ Базовый e-commerce</li>
-                    </ul>
+                <div class="glass p-6 rounded-2xl space-y-3">
+                    <div class="p-3 bg-blue-500/20 text-blue-400 rounded-xl w-fit"><i data-lucide="cpu"></i></div>
+                    <div class="font-bold text-base text-white">Function Calling Engine</div>
+                    <p class="text-xs text-gray-400 leading-relaxed">AI точно интерпретирует команды пользователя в системные действия над базой и кодом.</p>
                 </div>
 
-                <div class="glass-card p-6 rounded-2xl space-y-4 border-purple-500/40 glow-purple">
-                    <div class="font-bold text-lg text-purple-300">Pro Operator</div>
-                    <div class="text-3xl font-extrabold text-white">$149 <span class="text-xs text-gray-400 font-normal">/ мес</span></div>
-                    <ul class="text-xs text-gray-300 space-y-2">
-                        <li>✓ Безлимитный AI Operator</li>
-                        <li>✓ Полный e-commerce + BLIK/Stripe</li>
-                        <li>✓ Авто-SEO и Аналитика 24/7</li>
-                    </ul>
+                <div class="glass p-6 rounded-2xl space-y-3">
+                    <div class="p-3 bg-emerald-500/20 text-emerald-400 rounded-xl w-fit"><i data-lucide="shield-check"></i></div>
+                    <div class="font-bold text-base text-white">Детерминированный UI</div>
+                    <p class="text-xs text-gray-400 leading-relaxed">Изменения сайта происходят мгновенно без багов верстки через JSON-состояние.</p>
                 </div>
 
-                <div class="glass p-6 rounded-2xl space-y-4 border-white/10">
-                    <div class="font-bold text-lg">Enterprise</div>
-                    <div class="text-3xl font-extrabold text-white">Custom</div>
-                    <ul class="text-xs text-gray-400 space-y-2">
-                        <li>✓ Мульти-магазины</li>
-                        <li>✓ Персональная LLM-модель</li>
-                        <li>✓ Dedicated Infrastructure</li>
-                    </ul>
+                <div class="glass p-6 rounded-2xl space-y-3">
+                    <div class="p-3 bg-purple-500/20 text-purple-400 rounded-xl w-fit"><i data-lucide="refresh-cw"></i></div>
+                    <div class="font-bold text-base text-white">Живая связь со складом</div>
+                    <p class="text-xs text-gray-400 leading-relaxed">Любой новый товар или смена цены сразу пересчитывают финансовую аналитику.</p>
                 </div>
             </div>
         </div>
@@ -285,40 +289,29 @@
         <div class="text-xs text-gray-500 font-mono">06 / 07</div>
     </section>
 
-    <!-- СЛАЙД 7: THE ASK / TEAM -->
+    <!-- СЛАЙД 7: КОМАНДА И КОНТАКТЫ -->
     <section class="slide flex-col justify-between p-12 relative z-10">
         <div class="flex justify-between items-center">
-            <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">06 / Команда и Поиск</span>
+            <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">06 / Контакты</span>
             <span class="text-xs text-gray-500">AI Business Operator</span>
         </div>
 
-        <div class="max-w-5xl mx-auto w-full space-y-8">
-            <div class="space-y-2">
-                <h2 class="text-4xl font-bold tracking-tight">Строим революционный продукт</h2>
-                <p class="text-gray-400">Ищем ключевых партнеров для запуска глобального SaaS.</p>
+        <div class="max-w-4xl mx-auto w-full space-y-8 text-center">
+            <div class="space-y-3">
+                <h2 class="text-5xl font-extrabold tracking-tight">Давайте построим этот прорыв вместе</h2>
+                <p class="text-gray-400 text-lg">Ищем сильного CTO / Co-founder и инвесторов для глобального запуска.</p>
             </div>
 
-            <div class="grid grid-cols-2 gap-8">
-                <div class="glass-card p-6 rounded-2xl border-blue-500/30 space-y-4">
-                    <div class="p-3 bg-blue-500/20 text-blue-400 rounded-xl w-fit"><i data-lucide="code"></i></div>
-                    <h3 class="font-bold text-xl text-white">Co-founder / CTO (Equity 25–35%)</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Опыт в Python/Node.js, LLM Function Calling, Docker Sandboxes и Next.js. Желание отменить стандартную веб-разработку.
-                    </p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl border-purple-500/30 space-y-4">
-                    <div class="p-3 bg-purple-500/20 text-purple-400 rounded-xl w-fit"><i data-lucide="coins"></i></div>
-                    <h3 class="font-bold text-xl text-white">Pre-Seed Angel ($50k - $100k)</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">
-                        Финансирование LLM API, инфраструктуры изолированных песочниц и закрытого бета-запуска для SMB в Польше.
-                    </p>
+            <div class="glass-card p-8 rounded-3xl border-blue-500/30 max-w-md mx-auto space-y-4">
+                <div class="text-xs text-gray-400 uppercase tracking-widest font-mono">Связаться напрямую с Founder:</div>
+                <div class="text-2xl font-bold text-white flex items-center justify-center gap-2">
+                    <i data-lucide="send" class="text-blue-400"></i>
+                    <span>Telegram: <a href="https://t.me/BigGuitarBoy" target="_blank" class="text-blue-400 underline">@BigGuitarBoy</a></span>
                 </div>
             </div>
 
-            <div class="p-6 glass rounded-2xl text-center space-y-2">
-                <div class="text-xl font-bold text-white">Готовы построить будущее e-commerce вместе?</div>
-                <div class="text-sm text-gradient font-semibold">Contact Founder | Telegram / WhatsApp</div>
+            <div class="text-xs text-gray-500 font-mono">
+                «Не нужно учиться управлять сайтом. Нужно просто управлять бизнесом.»
             </div>
         </div>
 
